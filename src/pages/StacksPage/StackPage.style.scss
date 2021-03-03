@@ -1,0 +1,45 @@
+@use '../../scss/breakpoints';
+
+.stackpage {
+  .stacks-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 2.5%;
+    .stacks-presentation-description {
+      width: 80%;
+    }
+  }
+  .desktop-image {
+    display: none;
+  }
+}
+
+@media (min-width: breakpoints.$md) {
+  .stackpage {
+    .desktop-image {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      img {
+        width: 350px;
+      }
+    }
+  }
+}
+
+@media (min-width: breakpoints.$lg) {
+  .stackpage {
+    .stacks-presentation {
+      .stacks-presentation-description {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .desktop-image {
+      display: none;
+    }
+  }
+}

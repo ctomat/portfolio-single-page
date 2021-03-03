@@ -1,0 +1,14 @@
+@use '../../../scss/colors';
+
+.link-container {
+  .link-element {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: colors.$black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  .blue-text-color {
+    color: colors.$blue;
+  }
+}

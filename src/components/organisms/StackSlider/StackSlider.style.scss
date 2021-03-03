@@ -1,0 +1,92 @@
+@use '../../../scss/colors';
+@use '../../../scss/breakpoints';
+
+.stack-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .direction-arrow-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    background-color: colors.$blue;
+    border-radius: 10px;
+    :hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .left-arrow-icon {
+    margin-left: 20px;
+  }
+
+  .right-arrow-icon {
+    margin-right: 20px;
+  }
+
+  .stack-slider-list {
+    animation: bounce 0.2s 0.2;
+  }
+
+  .stack-slider-list-elements {
+    margin-bottom: 5px;
+    animation: slider 1s;
+    transition: ease-in-out;
+    transform: scale(0.9);
+  }
+}
+
+@media (min-width: breakpoints.$md) {
+  .stack-slider {
+    .direction-arrow-icon {
+    }
+
+    .left-arrow-icon {
+      margin-left: 70px;
+    }
+
+    .right-arrow-icon {
+      margin-right: 70px;
+    }
+
+    .stack-slider-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    .stack-slider-list-elements {
+      transform: scale(1);
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$lg) {
+  .stack-slider {
+    .direction-arrow-icon {
+    }
+
+    .stack-slider-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      margin-top: 20px;
+    }
+
+    .stack-slider-list-elements {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@keyframes slider {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

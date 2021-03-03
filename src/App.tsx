@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Nav from './components/molecules/nav/nav.component';
+import Home from './pages/Home/Home.component';
+import StackPage from './pages/StacksPage/StackPage.component';
+import AboutMe from './pages/AboutMe/AboutMe.component';
+import LetsStart from './pages/LetsStart/LetsStart.component';
+
+import Wave from './components/atoms/Wave/Wave.component';
+
+const App = () => (
+  <Router>
+    <Nav />
+    <Switch>
+      <Route path='/start'>
+        <LetsStart />
+      </Route>
+      <Route path='/about-me'>
+        <AboutMe />
+      </Route>
+      <Route path='/stacks'>
+        <StackPage />
+      </Route>
+      <Route path='/'>
+        <Home />
+      </Route>
+    </Switch>
+    <Wave />
+  </Router>
+);
 
 export default App;

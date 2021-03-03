@@ -1,0 +1,173 @@
+@use '../../../scss/colors';
+
+.progressbar-container {
+  margin: auto auto;
+  width: 100%;
+  line-height: 0.45;
+  background-color: rgb(189, 185, 185);
+  border-radius: 10px;
+}
+
+.progress-done {
+  background: linear-gradient(to left, #6583a8, #0c7b93);
+  border-radius: 10px;
+  text-align: center;
+  color: colors.$grey;
+  p {
+    font-size: 0.8rem;
+    padding: 2.5px 0;
+  }
+  transition: ease-in-out;
+}
+
+// * Progress Animation
+
+.progress-10 {
+  animation: progress-10 2s;
+}
+
+.progress-20 {
+  animation: progress-20 2s;
+}
+
+.progress-30 {
+  animation: progress-30 2s;
+}
+
+.progress-40 {
+  animation: progress-40 2s;
+}
+
+.progress-50 {
+  animation: progress-50 2s;
+}
+
+.progress-60 {
+  animation: progress-60 2s;
+}
+
+.progress-70 {
+  animation: progress-70 2s;
+}
+
+.progress-80 {
+  animation: progress-80 2s;
+}
+
+.progress-90 {
+  animation: progress-90 2s;
+}
+
+.progress-100 {
+  animation: progress-100 2s;
+}
+
+@keyframes progress-10 {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 10%;
+    opacity: 1;
+  }
+}
+
+@keyframes progress-20 {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 20%;
+    opacity: 1;
+  }
+}
+
+@keyframes progress-30 {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 30%;
+    opacity: 1;
+  }
+}
+
+@keyframes progress-40 {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 40%;
+    opacity: 1;
+  }
+}
+
+@keyframes progress-50 {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes progress-60 {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 60%;
+    opacity: 1;
+  }
+}
+
+@keyframes progress-70 {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 70%;
+    opacity: 1;
+  }
+}
+
+@keyframes progress-80 {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 80%;
+    opacity: 1;
+  }
+}
+
+@keyframes progress-90 {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 90%;
+    opacity: 1;
+  }
+}
+
+@keyframes progress-100 {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}

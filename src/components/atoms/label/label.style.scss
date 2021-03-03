@@ -1,0 +1,35 @@
+@use '../../../scss/colors';
+@use '../../../scss/breakpoints';
+
+.label-container {
+  width: fit-content;
+  font-family: 'Montserrat', sans-serif;
+  .label-element {
+    line-height: 1.4rem;
+    letter-spacing: 0.75px;
+    padding: 5px;
+  }
+}
+
+.label-blue-background {
+  background-color: colors.$blue;
+  color: colors.$grey;
+}
+
+.text-font {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: breakpoints.$xxl) {
+  .label-container {
+    .label-element {
+      font-size: 1.4rem;
+    }
+  }
+}

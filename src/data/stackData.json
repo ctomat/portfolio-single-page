@@ -1,0 +1,58 @@
+{
+  "stacks": [
+    {
+      "id": 1,
+      "imageUrl": "https://achievement-images.teamtreehouse.com/badges_intro_to_html_css_stage-01.png",
+      "labelText": "HTML & CSS",
+      "progress": 80
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/js-512.png",
+      "labelText": "Javascript",
+      "progress": 70
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
+      "labelText": "React",
+      "progress": 70
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://cdn.freebiesupply.com/logos/large/2x/nodejs-icon-logo-png-transparent.png",
+      "labelText": "NodeJS",
+      "progress": 50
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/PostCSS_Logo.svg/1200px-PostCSS_Logo.svg.png",
+      "labelText": "CSS Frameworks",
+      "progress": 50
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png",
+      "labelText": "VueJS",
+      "progress": 40
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://image.flaticon.com/icons/png/512/919/919832.png",
+      "labelText": "Typescript",
+      "progress": 60
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://achievement-images.teamtreehouse.com/badges_css_svganimation_stage01.png",
+      "labelText": "Animations",
+      "progress": 50
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://scholarblogs.emory.edu/lits/files/2019/03/atomicdesign.png",
+      "labelText": "Desing",
+      "progress": 40
+    }
+  ]
+}

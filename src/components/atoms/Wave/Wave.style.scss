@@ -1,0 +1,41 @@
+@use '../../../scss/breakpoints';
+
+.wave {
+  position: fixed;
+  bottom: 0;
+
+  /* And if you want the div to be full-width: */
+  left: 0;
+  right: 0;
+  .wave-svg {
+    margin-bottom: -10px;
+    margin-left: -10px;
+  }
+}
+
+@media (min-width: breakpoints.$sm) {
+  .wave {
+    .wave-svg {
+      margin-bottom: -20px;
+      margin-left: -20px;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$xl) {
+  .wave {
+    .wave-svg {
+      margin-bottom: -130px;
+      margin-left: -20px;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$xxl) {
+  .wave {
+    .wave-svg {
+      margin-bottom: -80px;
+      margin-left: -20px;
+    }
+  }
+}

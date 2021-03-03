@@ -1,0 +1,33 @@
+@use '../../../scss/breakpoints';
+
+.nav-container {
+  width: 100%;
+  .nav-element {
+    .nav-list-element {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .nav-list-item-element {
+        margin: 3%;
+      }
+    }
+  }
+}
+
+@media (min-width: breakpoints.$lg) {
+  .nav-container {
+    .nav-element {
+      .nav-list-element {
+        justify-content: end;
+      }
+    }
+  }
+}
+
+@media (min-width: breakpoints.$xxl) {
+  .nav-container {
+    margin-bottom: 80px;
+  }
+}

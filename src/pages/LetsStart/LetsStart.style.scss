@@ -1,0 +1,74 @@
+@use '../../scss/breakpoints';
+
+.start {
+  .start-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .start-header-description {
+      display: flex;
+      justify-content: center;
+      width: 80%;
+    }
+  }
+
+  .contact-section {
+    .social-section {
+      .social-section-contacts {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .social-section-contacts-element {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .start-notification {
+      width: 110px;
+      margin: 40px auto 0 auto;
+    }
+  }
+}
+
+@media (min-height: breakpoints.$md) {
+  .start {
+    .contact-section {
+      .start-notification {
+        width: 140px;
+        margin: 40px auto 0 auto;
+      }
+    }
+  }
+}
+
+@media (min-width: breakpoints.$md) {
+  .start {
+    .contact-section {
+      display: flex;
+      flex-direction: column-reverse;
+      .social-section {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media (min-width: breakpoints.$lg) {
+  .start {
+    .contact-section {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      .start-notification {
+        margin-right: 20px;
+        width: 140px;
+        margin-top: 0;
+      }
+      .social-section {
+        margin-right: auto;
+        margin-top: 0;
+      }
+    }
+  }
+}
