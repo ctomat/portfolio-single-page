@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { motion } from 'framer-motion';
+
 import Label from '../../components/atoms/label/label.component';
 import ImageContainer from '../../components/atoms/imageContainer/imageContainer.component';
 
@@ -13,39 +15,67 @@ const AboutMe = () => {
   return (
     <div className='about'>
       <div className='about-header'>
-        <div className='about-header-title'>
+        <motion.div
+          initial={{ y: -10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 1, ease: 'easeInOut', duration: 0.5 }}
+          className='about-header-title'
+        >
           <Label labelText='About Me!' blueBackground labelType='header' />
-        </div>
-        <div className='about-header-text'>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5, ease: 'easeInOut', duration: 0.5 }}
+          className='about-header-text'
+        >
           <Label
             labelText='My full name is Cristian Tomat, I am 22 years old. I love what I do and how I do it. My passions are computers, reading and games.'
             labelType='text'
             center
           />
-        </div>
+        </motion.div>
       </div>
       <div className='about-section'>
-        <div className='about-photo'>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2, ease: 'easeInOut', duration: 0.5 }}
+          className='about-photo'
+        >
           <div className='about-photo-box'>
             <div className='about-photo-box-inside'>
               <img src={Photo} alt={`It's me!`} />
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className='about-hobbys'>
           <div className='about-hobbys-images'>
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 2.5, ease: 'easeInOut', duration: 0.5 }}
               className='about-hobbys-images-element'
               style={{ marginLeft: 0 }}
             >
               <ImageContainer imageUrl={Megadrive} alternate />
-            </div>
-            <div className='about-hobbys-images-element'>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 3, ease: 'easeInOut', duration: 0.5 }}
+              className='about-hobbys-images-element'
+            >
               <ImageContainer imageUrl={MacBook} alternate />
-            </div>
-            <div className='about-hobbys-images-element'>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 3.5, ease: 'easeInOut', duration: 0.5 }}
+              className='about-hobbys-images-element'
+            >
               <ImageContainer imageUrl={Pencil} alternate />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

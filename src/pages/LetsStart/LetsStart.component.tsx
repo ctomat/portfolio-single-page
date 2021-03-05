@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { motion } from 'framer-motion';
+
 import Label from '../../components/atoms/label/label.component';
 import ImageContainer from '../../components/atoms/imageContainer/imageContainer.component';
 
@@ -14,20 +16,35 @@ const LetsStart = () => {
   return (
     <div className='start'>
       <div className='start-header'>
-        <div className='start-header-title'>
+        <motion.div
+          initial={{ y: -10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 1, ease: 'easeInOut', duration: 0.5 }}
+          className='start-header-title'
+        >
           <Label labelText='Let’s start' blueBackground labelType='header' />
-        </div>
-        <div className='start-header-description'>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5, ease: 'easeInOut', duration: 0.5 }}
+          className='start-header-description'
+        >
           <Label
             labelText='You can contact me through my email and social networks!'
             center
             labelType='text'
           />
-        </div>
+        </motion.div>
       </div>
       <div className='contact-section'>
         <div className='social-section'>
-          <div className='social-section-contacts'>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 2, ease: 'easeInOut', duration: 0.5 }}
+            className='social-section-contacts'
+          >
             <div
               className='social-section-contacts-element'
               style={{ marginLeft: 0 }}
@@ -40,13 +57,29 @@ const LetsStart = () => {
             <div className='social-section-contacts-element'>
               <ImageContainer imageUrl={Google} alternate />
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className='start-notification'>
-          <div className='start-notification-image'>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2, ease: 'easeInOut', duration: 0.5 }}
+          className='start-notification'
+        >
+          <motion.div
+            animate={{ y: [0, -20, 0] }}
+            transition={{
+              repeat: Infinity,
+              repeatType: 'loop',
+              repeatDelay: 0.5,
+              delay: 0.5,
+              ease: 'easeInOut',
+              duration: 10,
+            }}
+            className='start-notification-image'
+          >
             <img src={Notification} alt='notifications' />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

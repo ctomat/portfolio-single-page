@@ -9,25 +9,27 @@ import LetsStart from './pages/LetsStart/LetsStart.component';
 
 import Wave from './components/atoms/Wave/Wave.component';
 
-const App = () => (
-  <Router>
-    <Nav />
-    <Switch>
-      <Route path='/start'>
-        <LetsStart />
-      </Route>
-      <Route path='/about-me'>
-        <AboutMe />
-      </Route>
-      <Route path='/stacks'>
-        <StackPage />
-      </Route>
-      <Route path='/'>
-        <Home />
-      </Route>
-    </Switch>
-    <Wave />
-  </Router>
-);
+const App = () => {
+  return (
+    <Router>
+      <Nav />
+      <Switch>
+        <Route path='/start'>
+          <LetsStart />
+        </Route>
+        <Route path='/about-me'>
+          <AboutMe />
+        </Route>
+        <Route path='/stacks'>
+          <StackPage />
+        </Route>
+        <Route path='/'>
+          <Home />
+        </Route>
+      </Switch>
+      <Wave />
+    </Router>
+  );
+};
 
 export default App;
