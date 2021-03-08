@@ -24,10 +24,6 @@
       }
     }
 
-    .home-button {
-      display: none;
-    }
-
     .home-welcome-message {
       margin-top: 15%;
       width: 80%;
@@ -78,7 +74,7 @@
       justify-content: space-evenly;
       .section-start-landing {
         display: initial;
-        width: 250px;
+        width: 200px;
       }
       .section-start-button {
       }
@@ -120,79 +116,12 @@
     }
 
     .section-start {
+      flex-direction: column;
       margin-left: 40px;
       .section-start-landing {
       }
       .section-start-button {
-        display: none;
-      }
-    }
-  }
-}
-
-@media (min-width: breakpoints.$md) {
-  .home {
-    .header {
-      .home-header {
-        display: flex;
-        flex-wrap: wrap;
-        .home-header-title {
-          display: inline-block;
-          height: fit-content;
-          margin-left: auto;
-          font-size: 2rem;
-        }
-        .home-robot-image {
-          margin-top: 0;
-          margin-left: 20px;
-          margin-right: auto;
-          .robot-image-element {
-            width: 320px;
-          }
-        }
-        .home-welcome-message {
-          font-size: 1.1rem;
-          width: 50%;
-        }
-      }
-    }
-    .section-start {
-      display: flex;
-      margin-top: 40px;
-      justify-content: space-evenly;
-      .section-start-landing {
-        display: initial;
-        width: 250px;
-      }
-      .section-start-button {
-      }
-    }
-  }
-}
-
-@media (min-width: breakpoints.$lg) {
-  .home {
-    .header {
-      .home-header {
-        .home-header-title {
-          .hello-title-blue {
-          }
-          .hello-title-line {
-          }
-        }
-        .home-robot-image {
-          .robot-image-element {
-          }
-        }
-      }
-      .home-welcome-message {
-      }
-    }
-
-    .section-start {
-      .section-start-landing {
-      }
-      .section-start-button {
+        margin-top: 40px;
       }
     }
   }

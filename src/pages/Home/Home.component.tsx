@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 import Button from '../../components/atoms/button/button.component';
 import Label from '../../components/atoms/label/label.component';
@@ -49,9 +50,6 @@ const Home = () => {
             labelText='Together we will make the landing that your company deserves.'
           />
         </motion.div>
-        <div className='home-button'>
-          <Button labelText="Let's start" />
-        </div>
       </div>
       <div className='section-start'>
         <motion.div
@@ -62,42 +60,19 @@ const Home = () => {
         >
           <img src={LandigPage} alt='landing-page' />
         </motion.div>
-        <div className='section-start-button'>
-          <Button labelText="Let's start" />
-        </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5, duration: 0.5 }}
+          className='section-start-button'
+        >
+          <Link to='start'>
+            <Button labelText="Let's start" />;
+          </Link>
+        </motion.div>
       </div>
     </div>
   );
 };
-
-/*
-<div className='home'>
-  <div className='home-header'>
-    <h1 className='home-header-title'>
-      <span className='hello-title-blue'>Hello!</span> I am <br />
-      <span className='hello-title-line'>Cristian</span>
-    </h1>
-    <div className='home-robot-image'>
-      <img className='robot-image-element' src={robotImage} alt='robot' />
-    </div>
-    <div className='home-welcome-message'>
-      <Label
-        blueBackground
-        labelType='text'
-        labelText='Together we will make the landing that your company deserves.'
-      />
-    </div>
-  </div>
-  <div className='section-start'>
-    <div className='section-start-landing'>
-      <img src={LandigPage} alt='landing-page' />
-    </div>
-    <div className='section-start-button'>
-      <Button labelText="Let's start" />
-    </div>
-  </div>
-</div>;
-
-*/
 
 export default Home;

@@ -1,18 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import './linkElement.style.scss';
 
 type LinkElmentProps = {
   route: string;
-  isSelected?: boolean;
 };
 
-const LinkElement = ({ route, isSelected = false }: LinkElmentProps) => {
+const LinkElement = ({ route }: LinkElmentProps) => {
+  const location = useLocation();
   return (
     <div className='link-container'>
       <Link
-        className={`link-element ${isSelected ? 'blue-text-color' : ''}`}
+        className={`link-element ${
+          location.pathname === `/${route}` ? 'blue-text-color' : ''
+        }`}
         to={`/${route}`}
       >
         {route.replace(/[-]/g, ' ')}

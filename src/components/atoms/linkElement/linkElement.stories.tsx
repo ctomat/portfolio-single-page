@@ -13,4 +13,4 @@ export const Waiting = Template.bind({});
 Waiting.args = { route: 'route' };
 
 export const Selected = Template.bind({});
-Selected.args = { route: 'route', isSelected: true };
+Selected.args = { route: 'route' };
