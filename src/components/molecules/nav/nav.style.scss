@@ -53,5 +53,6 @@
 @media (min-width: breakpoints.$xxl) {
   .nav-container {
     margin-bottom: 80px;
+    justify-content: space-evenly;
   }
 }
