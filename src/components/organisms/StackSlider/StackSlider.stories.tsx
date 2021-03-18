@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react/types-6-0';
 import StackSlider, { StackSliderProps } from './StackSlider.component';
 
 export default {
-  title: 'Components/Molecules/StackSlider',
+  title: 'Components/Organisms/StackSlider',
   component: StackSlider,
 } as Meta;
 

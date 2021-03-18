@@ -49,13 +49,27 @@ const LetsStart = () => {
               className='social-section-contacts-element'
               style={{ marginLeft: 0 }}
             >
-              <ImageContainer imageUrl={Telegram} alternate />
+              <a href='https://t.me/ctomatfl' target='_blank' rel='noreferrer'>
+                <ImageContainer imageUrl={Telegram} alternate />
+              </a>
             </div>
             <div className='social-section-contacts-element'>
-              <ImageContainer imageUrl={GitHub} alternate />
+              <a
+                href='https://github.com/ctomat/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <ImageContainer imageUrl={GitHub} alternate />
+              </a>
             </div>
             <div className='social-section-contacts-element'>
-              <ImageContainer imageUrl={Google} alternate />
+              <a
+                href='mailto:ctomatfl@gmail.com?subject=Contact'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <ImageContainer imageUrl={Google} alternate />
+              </a>
             </div>
           </motion.div>
         </div>

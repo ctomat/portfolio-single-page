@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
 import Nav from './components/molecules/nav/nav.component';
 import Home from './pages/Home/Home.component';
@@ -11,24 +12,26 @@ import Wave from './components/atoms/Wave/Wave.component';
 
 const App = () => {
   return (
-    <Router>
-      <Nav />
-      <Switch>
-        <Route path='/start'>
-          <LetsStart />
-        </Route>
-        <Route path='/about-me'>
-          <AboutMe />
-        </Route>
-        <Route path='/stacks'>
-          <StackPage />
-        </Route>
-        <Route path='/'>
-          <Home />
-        </Route>
-      </Switch>
-      <Wave />
-    </Router>
+    <AnimatePresence>
+      <Router>
+        <Nav />
+        <Switch>
+          <Route path='/start'>
+            <LetsStart />
+          </Route>
+          <Route path='/about-me'>
+            <AboutMe />
+          </Route>
+          <Route path='/stacks'>
+            <StackPage />
+          </Route>
+          <Route path='/'>
+            <Home />
+          </Route>
+        </Switch>
+        <Wave />
+      </Router>
+    </AnimatePresence>
   );
 };
 
