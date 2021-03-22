@@ -2,19 +2,19 @@
   "stacks": [
     {
       "id": 1,
-      "imageUrl": "https://www.flaticon.com/svg/vstatic/svg/3094/3094320.svg?token=exp=1616085318~hmac=1efc5ea94a4adaec1821fbd4a966ebf8",
+      "imageUrl": "https://achievement-images.teamtreehouse.com/badges_intro_to_html_css_stage-01.png",
       "labelText": "HTML & CSS",
       "progress": 80
     },
     {
       "id": 2,
-      "imageUrl": "https://www.flaticon.com/svg/vstatic/svg/919/919828.svg?token=exp=1616085167~hmac=b18a80f73cc3386fd81bef1b733d3bbe",
+      "imageUrl": "https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/js-512.png",
       "labelText": "Javascript",
       "progress": 70
     },
     {
       "id": 3,
-      "imageUrl": "https://www.flaticon.com/svg/vstatic/svg/1126/1126012.svg?token=exp=1616085217~hmac=4b50694a8b44439e4df385b5ec51b674",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
       "labelText": "React",
       "progress": 70
     },
@@ -26,7 +26,7 @@
     },
     {
       "id": 5,
-      "imageUrl": "https://www.flaticon.com/svg/vstatic/svg/3308/3308160.svg?token=exp=1616085318~hmac=b1e0646cebc17db697b850bfba86dc07",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/PostCSS_Logo.svg/1200px-PostCSS_Logo.svg.png",
       "labelText": "CSS Frameworks",
       "progress": 50
     },
@@ -50,7 +50,7 @@
     },
     {
       "id": 9,
-      "imageUrl": "https://www.flaticon.com/svg/vstatic/svg/2919/2919740.svg?token=exp=1616084238~hmac=9a74bfcd46f76578f6f34cdab1a7bcd0",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/BYR_color_wheel.svg",
       "labelText": "Design",
       "progress": 40
     }
