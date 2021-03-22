@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 import Button from '../../atoms/button/button.component';
 import LinkElement from '../../atoms/linkElement/linkElement.component';
@@ -11,7 +12,12 @@ import './nav.style.scss';
 const Nav = () => {
   const location = useLocation();
   return (
-    <div className='nav-container'>
+    <motion.div
+      className='nav-container'
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+    >
       <div className='logo-container'>
         <Link to='/'>
           <img src={Logo} alt='Logo' width='300px' />
@@ -35,7 +41,7 @@ const Nav = () => {
           </li>
         </ul>
       </nav>
-    </div>
+    </motion.div>
   );
 };
 
